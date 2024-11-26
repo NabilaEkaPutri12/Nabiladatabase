@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Penyewaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulir Penyewaan</h2>
+    <form action="proses.php" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br>
+    
+    
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required><br>
+    
+        <label for="no_telp">No Telp:</label>
+        <input type="text" id="no_telp" name="no_telp" required><br>
+    
+        <label for="no_ktp">No KTP:</label>
+        <input type="text" id="no_ktp" name="no_ktp" required><br>
+    
+        <label for="tgl_pengembalian">Tanggal Pengembalian:</label>
+        <input type="date" id="tgl_pengembalian" name="tgl_pengembalian" required><br>
+    
+        <label for="pilihan">Pilih Merek Kendaraan:</label>
+        <select id="pilihan" name="pilihan" required>
+            <option value="" disabled selected>Pilih Merek Kendaraan</option>
+            <option value="Alphard">Alphard</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Brio">Brio</option>
+            <option value="Innova Reborn">Innova Reborn</option>
+            <option value="HR-V">HR-V</option>
+            <option value="BMW">BMW</option>
+        </select><br><br>
+    
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
